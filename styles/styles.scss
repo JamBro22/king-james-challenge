@@ -195,6 +195,49 @@ $backgroundColor: #201728;
     left: 7%;
     transform: translateY(55%);
   }
+
+  .data-section {
+    position: absolute;
+    font-size: 70px;
+    font-weight: lighter;
+    color: #f8f8ff;
+    left: 53%;
+    transform: translateY(350%);
+  }
+
+  .data-paragraph {
+    position: absolute;
+    color: #f8f8ff;
+    width: 30%;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    left: 60%;
+    transform: translateY(250%);
+  }
+
+  .data-btn {
+    @extend .btn;
+    left: 850px;
+    position: absolute;
+    transform: translateY(550px);
+
+    img {
+      position: absolute;
+      margin-left: 18px;
+    }
+  }
+
+  .arrow-glyph-2 {
+    position: absolute;
+    left: 50%;
+    transform: translateY(700px);
+  }
+}
+
+.section3 {
+  background-color: #f8f8ff;
+  height: 100px;
+  padding: 200px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.btn, .section .purple-box button, .section .ad-box button {
+.btn, .section .purple-box button, .section .ad-box button, .section2 .data-btn {
   font-family: "Montserrat", sans-serif;
   color: #f8f8ff;
   font-size: 10px;
@@ -189,6 +189,52 @@
   left: 7%;
   -webkit-transform: translateY(55%);
           transform: translateY(55%);
+}
+
+.section2 .data-section {
+  position: absolute;
+  font-size: 70px;
+  font-weight: lighter;
+  color: #f8f8ff;
+  left: 53%;
+  -webkit-transform: translateY(350%);
+          transform: translateY(350%);
+}
+
+.section2 .data-paragraph {
+  position: absolute;
+  color: #f8f8ff;
+  width: 30%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  left: 60%;
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
+}
+
+.section2 .data-btn {
+  left: 850px;
+  position: absolute;
+  -webkit-transform: translateY(550px);
+          transform: translateY(550px);
+}
+
+.section2 .data-btn img {
+  position: absolute;
+  margin-left: 18px;
+}
+
+.section2 .arrow-glyph-2 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(700px);
+          transform: translateY(700px);
+}
+
+.section3 {
+  background-color: #f8f8ff;
+  height: 100px;
+  padding: 200px;
 }
 
 @media only screen and (max-width: 600px) {
