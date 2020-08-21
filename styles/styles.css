@@ -7,7 +7,7 @@
   background-image: url("../img/1. hearo-top.jpg");
   background-size: cover;
   background-position: top;
-  height: 120vh;
+  height: 125vh;
   width: 100%;
 }
 
@@ -23,11 +23,11 @@
 
 .hearo .logo {
   position: relative;
-  top: 45%;
+  top: 42%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80px;
+  height: 90px;
   margin: 0 auto;
 }
 
@@ -35,7 +35,7 @@
   position: absolute;
   height: 8%;
   left: 50%;
-  bottom: 2px;
+  bottom: 1px;
 }
 
 .section {
@@ -48,8 +48,8 @@
   display: block;
   background-color: #201728;
   height: 200px;
-  -webkit-transform: skewY(2deg) translateY(-22px);
-          transform: skewY(2deg) translateY(-22px);
+  -webkit-transform: skewY(3deg) translateY(-41px);
+          transform: skewY(3deg) translateY(-41px);
 }
 
 .section p {
@@ -68,7 +68,7 @@
   font-size: 38px;
   font-weight: lighter;
   color: #f8f8ff;
-  padding: 5% 8%;
+  padding: 5%;
   width: 50%;
   height: auto;
   margin: 0 auto;
@@ -88,17 +88,21 @@
   border: 2px solid #db1c5e;
 }
 
-.section p::after {
-  content: "";
-  position: relative;
-  height: 30px;
-  width: 100%;
-  background-color: yellow;
+.section p button img {
+  position: absolute;
+  margin-left: 18px;
 }
 
 @media only screen and (max-width: 600px) {
   .hearo .logo {
-    top: 35%;
+    top: 41%;
+  }
+  .section p {
+    font-size: 20px;
+    -webkit-transform: translateY(-95%);
+            transform: translateY(-95%);
+    padding-top: 20px;
+    line-height: 1.5;
   }
 }
 /*# sourceMappingURL=styles.css.map */

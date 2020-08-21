@@ -15,7 +15,7 @@ $backgroundColor: #201728;
     size: cover;
     position: top;
   }
-  height: 120vh;
+  height: 125vh;
   width: 100%;
 
   i {
@@ -30,9 +30,9 @@ $backgroundColor: #201728;
 
   .logo {
     position: relative;
-    top: 45%;
+    top: 42%;
     display: flex;
-    height: 80px;
+    height: 90px;
     margin: 0 auto;
   }
 
@@ -40,7 +40,7 @@ $backgroundColor: #201728;
     position: absolute;
     height: 8%;
     left: 50%;
-    bottom: 2px;
+    bottom: 1px;
   }
 }
 
@@ -53,7 +53,7 @@ $backgroundColor: #201728;
     display: block;
     background-color: $backgroundColor;
     height: 200px;
-    transform: skewY(2deg) translateY(-22px);
+    transform: skewY(3deg) translateY(-41px);
   }
 
   p {
@@ -69,7 +69,7 @@ $backgroundColor: #201728;
       weight: lighter;
     }
     color: #f8f8ff;
-    padding: 5% 8%;
+    padding: 5%;
     width: 50%;
     height: auto;
     margin: 0 auto;
@@ -85,22 +85,37 @@ $backgroundColor: #201728;
       width: 130px;
       margin: 40px auto 0 auto;
       border: 2px solid $secondaryColor;
+
+      img {
+        position: absolute;
+        margin-left: 18px;
+      }
     }
 
-    &::after {
-      content: "";
-      position: relative;
-      height: 30px;
-      width: 100%;
-      background-color: yellow;
-    }
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     height: 50px;
+    //     width: 100%;
+    //     background-color: yellow;
+    //     transform: skewY(-5deg) translate(-30px, 100px);
+    //   }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .hearo {
     .logo {
-      top: 35%;
+      top: 41%;
+    }
+  }
+
+  .section {
+    p {
+      font-size: 20px;
+      transform: translateY(-95%);
+      padding-top: 20px;
+      line-height: 1.5;
     }
   }
 }
