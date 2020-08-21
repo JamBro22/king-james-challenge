@@ -236,8 +236,14 @@ $backgroundColor: #201728;
 
 .section3 {
   background-color: #f8f8ff;
-  height: 100px;
-  padding: 200px;
+  height: 500px;
+  display: flex;
+
+  .blocks {
+    background-color: $backgroundColor;
+    height: 300px;
+    width: 22%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
