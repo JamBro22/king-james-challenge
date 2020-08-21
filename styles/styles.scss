@@ -9,6 +9,17 @@ $backgroundColor: #201728;
   padding: 0;
 }
 
+.btn {
+  font-family: $montserrat;
+  color: #f8f8ff;
+  font-size: 10px;
+  background-color: transparent;
+  height: 35px;
+  width: 130px;
+  margin: 40px auto 0 auto;
+  border: 2px solid $secondaryColor;
+}
+
 .hearo {
   background: {
     image: url("../img/1.\ hearo-top.jpg");
@@ -56,7 +67,7 @@ $backgroundColor: #201728;
     transform: skewY(3deg) translateY(-41px);
   }
 
-  p {
+  .purple-box {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -77,14 +88,7 @@ $backgroundColor: #201728;
     z-index: 1;
 
     button {
-      font-family: $montserrat;
-      color: #f8f8ff;
-      font-size: 10px;
-      background-color: transparent;
-      height: 35px;
-      width: 130px;
-      margin: 40px auto 0 auto;
-      border: 2px solid $secondaryColor;
+      @extend .btn;
 
       img {
         position: absolute;
@@ -101,6 +105,60 @@ $backgroundColor: #201728;
     //     transform: skewY(-5deg) translate(-30px, 100px);
     //   }
   }
+
+  .cross-glyph {
+    position: absolute;
+    left: 47%;
+    transform: translateY(-150%);
+  }
+
+  .header {
+    color: #f8f8ff;
+    font-size: 60px;
+    font-weight: lighter;
+    width: 30%;
+  }
+
+  .advertising-box {
+    position: absolute;
+    width: 50%;
+    color: #f8f8ff;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+
+  .hexagon {
+    position: absolute;
+    left: 30%;
+    transform: translateY(-15%);
+  }
+
+  .slider-1 {
+    position: absolute;
+    left: 40%;
+    transform: translateY(20%);
+  }
+
+  .glyph {
+    position: absolute;
+    position: absolute;
+    left: 78%;
+    transform: translateY(45%);
+  }
+
+  .arrow-glyph {
+    position: absolute;
+    left: 33%;
+    transform: translateY(420%);
+  }
+
+  .ad-box {
+    position: absolute;
+    left: 16%;
+    z-index: 1;
+    transform: translateY(25px);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -113,9 +171,13 @@ $backgroundColor: #201728;
   .section {
     p {
       font-size: 20px;
-      transform: translateY(-95%);
+      transform: translateY(-85%);
       padding-top: 20px;
       line-height: 1.5;
+    }
+
+    .cross-glyph {
+      left: 35%;
     }
   }
 }
