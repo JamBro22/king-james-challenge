@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.btn, .section .purple-box button {
+.btn, .section .purple-box button, .section .ad-box button {
   font-family: "Montserrat", sans-serif;
   color: #f8f8ff;
   font-size: 10px;
@@ -51,7 +51,7 @@
 
 .section {
   background-color: #201728;
-  height: 200vh;
+  height: 150vh;
 }
 
 .section::before {
@@ -61,6 +61,15 @@
   height: 200px;
   -webkit-transform: skewY(3deg) translateY(-41px);
           transform: skewY(3deg) translateY(-41px);
+}
+
+.section::after {
+  content: "";
+  display: block;
+  background-color: #201728;
+  height: 200px;
+  -webkit-transform: skewY(-3deg) translateY(600px);
+          transform: skewY(-3deg) translateY(600px);
 }
 
 .section .purple-box {
@@ -143,6 +152,7 @@
   left: 33%;
   -webkit-transform: translateY(420%);
           transform: translateY(420%);
+  z-index: 1;
 }
 
 .section .ad-box {
@@ -151,6 +161,34 @@
   z-index: 1;
   -webkit-transform: translateY(25px);
           transform: translateY(25px);
+}
+
+.section .ad-box button {
+  margin-top: 200px;
+}
+
+.section .ad-box button img {
+  position: absolute;
+  margin-left: 18px;
+}
+
+.section2 {
+  background-color: #70259b;
+  height: 100vh;
+}
+
+.section2 .circle {
+  position: absolute;
+  left: 40%;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.section2 .slider2 {
+  position: absolute;
+  left: 7%;
+  -webkit-transform: translateY(55%);
+          transform: translateY(55%);
 }
 
 @media only screen and (max-width: 600px) {

@@ -56,8 +56,8 @@ $backgroundColor: #201728;
 }
 
 .section {
-  background-color: $backgroundColor;
-  height: 200vh;
+  background-color: #201728;
+  height: 150vh;
 
   &::before {
     content: "";
@@ -65,6 +65,14 @@ $backgroundColor: #201728;
     background-color: $backgroundColor;
     height: 200px;
     transform: skewY(3deg) translateY(-41px);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: $backgroundColor;
+    height: 200px;
+    transform: skewY(-3deg) translateY(600px);
   }
 
   .purple-box {
@@ -151,6 +159,7 @@ $backgroundColor: #201728;
     position: absolute;
     left: 33%;
     transform: translateY(420%);
+    z-index: 1;
   }
 
   .ad-box {
@@ -158,6 +167,33 @@ $backgroundColor: #201728;
     left: 16%;
     z-index: 1;
     transform: translateY(25px);
+
+    button {
+      @extend .btn;
+      margin-top: 200px;
+
+      img {
+        position: absolute;
+        margin-left: 18px;
+      }
+    }
+  }
+}
+
+.section2 {
+  background-color: $primaryColor;
+  height: 100vh;
+
+  .circle {
+    position: absolute;
+    left: 40%;
+    transform: translateY(30%);
+  }
+
+  .slider2 {
+    position: absolute;
+    left: 7%;
+    transform: translateY(55%);
   }
 }
 
