@@ -1,0 +1,106 @@
+$montserrat: "Montserrat", sans-serif;
+$playfair: "Playfair Display", serif;
+$primaryColor: #70259b;
+$secondaryColor: #db1c5e;
+$backgroundColor: #201728;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hearo {
+  background: {
+    image: url("../img/1.\ hearo-top.jpg");
+    size: cover;
+    position: top;
+  }
+  height: 120vh;
+  width: 100%;
+
+  i {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1;
+  }
+
+  .logo {
+    position: relative;
+    top: 45%;
+    display: flex;
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .arrow-down {
+    position: absolute;
+    height: 8%;
+    left: 50%;
+    bottom: 2px;
+  }
+}
+
+.section {
+  background-color: $backgroundColor;
+  height: 200vh;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: $backgroundColor;
+    height: 200px;
+    transform: skewY(2deg) translateY(-22px);
+  }
+
+  p {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.3;
+    background-color: $primaryColor;
+    font: {
+      family: $playfair;
+      size: 38px;
+      weight: lighter;
+    }
+    color: #f8f8ff;
+    padding: 5% 8%;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    transform: translateY(-85%);
+    z-index: 1;
+
+    button {
+      font-family: $montserrat;
+      color: #f8f8ff;
+      font-size: 10px;
+      background-color: transparent;
+      height: 35px;
+      width: 130px;
+      margin: 40px auto 0 auto;
+      border: 2px solid $secondaryColor;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      height: 30px;
+      width: 100%;
+      background-color: yellow;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hearo {
+    .logo {
+      top: 35%;
+    }
+  }
+}
