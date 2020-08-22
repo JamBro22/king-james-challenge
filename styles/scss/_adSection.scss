@@ -1,0 +1,19 @@
+.ad-section {
+    background-color: $backgroundColor;
+    height: 100vh;
+    @extend boxPadding;
+
+    &::before {
+        content: "";
+        display: block;
+        background-color: $backgroundColor;
+        height: 200px;
+        margin: -115px -80px;
+        transform: skewY(3deg);
+    }
+
+    .purple-box {
+        z-index: 1;
+        color: $textColor;
+    }
+}

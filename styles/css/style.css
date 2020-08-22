@@ -32,6 +32,22 @@
   left: 50%;
 }
 
+.ad-section {
+  background-color: #201728;
+  height: 100vh;
+  padding: 80px;
+}
+
+.ad-section::before {
+  content: "";
+  display: block;
+  background-color: #201728;
+  height: 200px;
+  margin: -115px -80px;
+  -webkit-transform: skewY(3deg);
+          transform: skewY(3deg);
+}
+
 @media only screen and (max-width: 600px) {
   .hero img {
     height: 80px;

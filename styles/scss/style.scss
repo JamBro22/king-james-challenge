@@ -11,5 +11,10 @@ $textColor: #f8f8ff;
     box-sizing: border-box;
 }
 
+%boxPadding {
+    padding: 80px;
+}
+
 @import "hero";
+@import "adSection";
 @import "mobile";
