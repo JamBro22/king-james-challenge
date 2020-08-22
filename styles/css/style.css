@@ -98,9 +98,22 @@ button:hover {
   font-size: 45px;
   font-family: "Playfair Display", serif;
   text-align: center;
-  padding: 4% 8%;
+  padding: 55px 60px;
   -webkit-transform: translateY(-35%);
           transform: translateY(-35%);
+}
+
+.ad-section .purple-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100px;
+  width: 100%;
+  background-color: #70259b;
+  margin: -60px;
+  -webkit-transform: skewY(-5deg) translateY(60px);
+          transform: skewY(-5deg) translateY(60px);
+  z-index: -1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -113,5 +126,10 @@ button:hover {
     line-height: 1.5;
     -webkit-transform: translateY(-8rem);
             transform: translateY(-8rem);
+  }
+  .ad-section .purple-box::after {
+    margin: -15px;
+    -webkit-transform: skewY(-5deg) translateY(0);
+            transform: skewY(-5deg) translateY(0);
   }
 }
