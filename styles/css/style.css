@@ -5,25 +5,31 @@
           box-sizing: border-box;
 }
 
+.ad-section {
+  padding: 80px;
+}
+
 .hero {
   background-image: url("../../img/1. hearo-top.jpg");
   background-position: center center;
   background-size: cover;
   height: 120vh;
   width: 100%;
-  padding: 15px;
 }
 
 .hero .menu-icon {
+  position: fixed;
   color: #f8f8ff;
-  float: right;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
 }
 
 .hero .menu-icon:hover {
   cursor: pointer;
 }
 
-.hero img {
+.hero .logo {
   position: absolute;
   height: 95px;
   -webkit-transform: translateX(-50%);
@@ -32,10 +38,17 @@
   left: 50%;
 }
 
+.hero .arrow-down {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
+
 .ad-section {
   background-color: #201728;
   height: 100vh;
-  padding: 80px;
 }
 
 .ad-section::before {
@@ -48,8 +61,13 @@
           transform: skewY(3deg);
 }
 
+.ad-section .purple-box {
+  z-index: 1;
+  color: #f8f8ff;
+}
+
 @media only screen and (max-width: 600px) {
-  .hero img {
+  .hero .logo {
     height: 80px;
   }
 }

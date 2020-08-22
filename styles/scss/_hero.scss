@@ -6,22 +6,31 @@
     }
     height: 120vh;
     width: 100%;
-    padding: 15px;
 
     .menu-icon {
+        position: fixed;
         color: $textColor;
-        float: right;
+        top: 15px;
+        right: 15px;
+        z-index: 1;
 
         &:hover {
             cursor: pointer;
         }
     }
 
-    img {
+    .logo {
         position: absolute;
         height: 95px;
         transform: translateX(-50%);
         top: 50%;
+        left: 50%;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: 0;
+        transform: translateX(-50%);
         left: 50%;
     }
 }

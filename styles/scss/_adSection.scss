@@ -1,7 +1,7 @@
 .ad-section {
     background-color: $backgroundColor;
     height: 100vh;
-    @extend boxPadding;
+    @extend %boxPadding;
 
     &::before {
         content: "";
