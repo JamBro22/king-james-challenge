@@ -15,6 +15,36 @@ $textColor: #f8f8ff;
     padding: 80px;
 }
 
+p {
+    color: $textColor;
+}
+
+button {
+    background: transparent;
+    color: $textColor;
+    font: {
+        family: $montserrat;
+        size: 12px;
+    }
+    border: 2px solid $secondaryColor;
+    height: 40px;
+    width: 150px;
+    margin-top: 50px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.arrow-right {
+    position: absolute;
+    transform: translateX(20px);
+}
+
 @import "hero";
 @import "adSection";
 @import "mobile";

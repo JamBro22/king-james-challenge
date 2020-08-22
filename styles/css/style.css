@@ -9,6 +9,35 @@
   padding: 80px;
 }
 
+p {
+  color: #f8f8ff;
+}
+
+button {
+  background: transparent;
+  color: #f8f8ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  border: 2px solid #db1c5e;
+  height: 40px;
+  width: 150px;
+  margin-top: 50px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.arrow-right {
+  position: absolute;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
 .hero {
   background-image: url("../../img/1. hearo-top.jpg");
   background-position: center center;
@@ -62,12 +91,27 @@
 }
 
 .ad-section .purple-box {
-  z-index: 1;
-  color: #f8f8ff;
+  position: absolute;
+  background-color: #70259b;
+  width: 70%;
+  left: 15%;
+  font-size: 45px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 4% 8%;
+  -webkit-transform: translateY(-35%);
+          transform: translateY(-35%);
 }
 
 @media only screen and (max-width: 600px) {
   .hero .logo {
     height: 80px;
+  }
+  .ad-section .purple-box {
+    padding: 30px 15px;
+    font-size: 24px;
+    line-height: 1.5;
+    -webkit-transform: translateY(-8rem);
+            transform: translateY(-8rem);
   }
 }
