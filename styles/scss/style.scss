@@ -1,0 +1,15 @@
+$montserrat: "Montserrat", sans-serif;
+$playfair: "Playfair Display", serif;
+$primaryColor: #70259b;
+$secondaryColor: #db1c5e;
+$backgroundColor: #201728;
+$textColor: #f8f8ff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "hero";
+@import "mobile";

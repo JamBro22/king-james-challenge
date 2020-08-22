@@ -1,0 +1,23 @@
+.hero {
+    background: {
+        image: url("../../img/1.\ hearo-top.jpg");
+        position: center center;
+        size: cover;
+    }
+    height: 120vh;
+    width: 100%;
+    padding: 15px;
+
+    .menu-icon {
+        color: $textColor;
+        float: right;
+    }
+
+    img {
+        position: absolute;
+        height: 95px;
+        transform: translateX(-50%);
+        top: 50%;
+        left: 50%;
+    }
+}
