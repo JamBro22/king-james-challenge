@@ -11,6 +11,10 @@
     .menu-icon {
         color: $textColor;
         float: right;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     img {

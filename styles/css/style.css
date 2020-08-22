@@ -1,1 +1,39 @@
-*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}.hero{background-image:url("../../img/1. hearo-top.jpg");background-position:center center;background-size:cover;height:120vh;width:100%;padding:15px}.hero .menu-icon{color:#f8f8ff;float:right}.hero img{position:absolute;height:95px;-webkit-transform:translateX(-50%);transform:translateX(-50%);top:50%;left:50%}@media only screen and (max-width: 600px){.hero img{height:80px}}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("../../img/1. hearo-top.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  padding: 15px;
+}
+
+.hero .menu-icon {
+  color: #f8f8ff;
+  float: right;
+}
+
+.hero .menu-icon:hover {
+  cursor: pointer;
+}
+
+.hero img {
+  position: absolute;
+  height: 95px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero img {
+    height: 80px;
+  }
+}
