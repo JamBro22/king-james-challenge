@@ -1,0 +1,20 @@
+.article-section {
+  @extend %boxPadding;
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 100%;
+  background-color: $textColor;
+
+  //   .article-1 {
+  //     @include article(url("../../img/12.\ bg-square-gradient.png"));
+  //   }
+
+  //   .article-2 {
+  //     @include article(url("../../img/13.\ bg-square-gradient.png"));
+  //   }
+
+  //   .article-3 {
+  //     @include article(url("../../img/14.\ bg-rectangle-gradient.png"));
+  //   }
+}

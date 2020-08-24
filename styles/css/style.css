@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-.ad-section {
+.ad-section, .article-section {
   padding: 80px;
 }
 
@@ -66,6 +66,12 @@ button:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 2;
+}
+
+.article {
+  position: relative;
+  height: 100%;
+  width: 32%;
 }
 
 .hero {
@@ -268,6 +274,18 @@ button:hover {
   left: 50%;
   -webkit-transform: translateY(730px);
           transform: translateY(730px);
+}
+
+.article-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80vh;
+  width: 100%;
+  background-color: #f8f8ff;
 }
 
 @media only screen and (max-width: 600px) {

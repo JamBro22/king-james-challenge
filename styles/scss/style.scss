@@ -74,7 +74,14 @@ button {
   line-height: 2;
 }
 
+.article {
+  position: relative;
+  height: 100%;
+  width: 32%;
+}
+
 @import "hero";
 @import "adSection";
 @import "dataSection";
+@import "articleSection";
 @import "mobile";
