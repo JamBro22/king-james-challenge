@@ -15,6 +15,11 @@ $textColor: #f8f8ff;
   padding: 80px;
 }
 
+%general {
+  position: absolute;
+  z-index: 1;
+}
+
 p {
   color: $textColor;
 }
@@ -46,6 +51,15 @@ button {
   transform: translateX(20px);
 }
 
+.paragraph {
+  font: {
+    family: $montserrat;
+    size: 12px;
+  }
+  line-height: 2;
+}
+
 @import "hero";
 @import "adSection";
+@import "dataSection";
 @import "mobile";

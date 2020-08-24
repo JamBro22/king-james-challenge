@@ -9,6 +9,11 @@
   padding: 80px;
 }
 
+.ad-section .hexagon, .ad-section .slider-1, .ad-section .waves, .ad-section .ad-block, .ad-section .arrow-glyph {
+  position: absolute;
+  z-index: 1;
+}
+
 p {
   color: #f8f8ff;
 }
@@ -37,6 +42,12 @@ button:hover {
   position: absolute;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
+}
+
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 2;
 }
 
 .hero {
@@ -78,7 +89,7 @@ button:hover {
 
 .ad-section {
   background-color: #201728;
-  height: 100vh;
+  height: 230vh;
 }
 
 .ad-section::before {
@@ -89,6 +100,16 @@ button:hover {
   margin: -115px -80px;
   -webkit-transform: skewY(3deg) translateY(-25%);
           transform: skewY(3deg) translateY(-25%);
+}
+
+.ad-section::after {
+  content: "";
+  display: block;
+  background-color: #201728;
+  height: 515px;
+  margin: -115px -80px;
+  -webkit-transform: skewY(-3deg) translateY(100%);
+          transform: skewY(-3deg) translateY(100%);
 }
 
 .ad-section .purple-box {
@@ -116,6 +137,66 @@ button:hover {
   -webkit-transform: skewY(-4deg) translateY(65px);
           transform: skewY(-4deg) translateY(65px);
   z-index: -1;
+}
+
+.ad-section .cross {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.ad-section .hexagon {
+  left: 25%;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
+.ad-section .slider-1 {
+  height: 400px;
+  width: 600px;
+  left: 40%;
+  -webkit-transform: translateY(90%);
+          transform: translateY(90%);
+}
+
+.ad-section .waves {
+  left: 79%;
+  height: 100px;
+  -webkit-transform: translateY(325%);
+          transform: translateY(325%);
+}
+
+.ad-section .ad-block {
+  width: 30%;
+  left: 15%;
+  -webkit-transform: translateY(63%);
+          transform: translateY(63%);
+}
+
+.ad-section .ad-heading {
+  color: #f8f8ff;
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  font-weight: lighter;
+  margin: 30px 0;
+}
+
+.ad-section .ad-paragraph {
+  position: relative;
+  width: 65%;
+}
+
+.ad-section .arrow-glyph {
+  left: 32%;
+  -webkit-transform: translateY(750px);
+          transform: translateY(750px);
+}
+
+.data-section {
+  background-color: #70259b;
+  height: 150vh;
+  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
