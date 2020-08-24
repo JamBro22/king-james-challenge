@@ -86,6 +86,7 @@ button:hover {
 
 .hero .menu-icon:hover {
   cursor: pointer;
+  font-weight: bolder;
 }
 
 .hero .logo {
