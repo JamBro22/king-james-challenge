@@ -103,6 +103,34 @@ button:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   left: 50%;
+  -webkit-animation: slide 0.5s ease-in-out infinite alternate;
+          animation: slide 0.5s ease-in-out infinite alternate;
+}
+
+.hero .arrow-down:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
 }
 
 .ad-section {
