@@ -60,10 +60,10 @@ button:hover {
 
 .hero .logo {
   position: absolute;
-  height: 95px;
+  height: 85px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 50%;
+  top: 52%;
   left: 50%;
 }
 
@@ -86,33 +86,33 @@ button:hover {
   background-color: #201728;
   height: 200px;
   margin: -115px -80px;
-  -webkit-transform: skewY(3deg);
-          transform: skewY(3deg);
+  -webkit-transform: skewY(3deg) translateY(5px);
+          transform: skewY(3deg) translateY(5px);
 }
 
 .ad-section .purple-box {
   position: absolute;
   background-color: #70259b;
-  width: 70%;
+  width: 68%;
   left: 15%;
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Playfair Display", serif;
   text-align: center;
   padding: 55px 60px;
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
+  -webkit-transform: translateY(-32%);
+          transform: translateY(-32%);
 }
 
 .ad-section .purple-box::after {
   content: "";
   display: block;
   position: absolute;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: #70259b;
   margin: -60px;
-  -webkit-transform: skewY(-5deg) translateY(60px);
-          transform: skewY(-5deg) translateY(60px);
+  -webkit-transform: skewY(-4deg) translateY(65px);
+          transform: skewY(-4deg) translateY(65px);
   z-index: -1;
 }
 

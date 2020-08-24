@@ -1,36 +1,36 @@
 .hero {
-    background: {
-        image: url("../../img/1.\ hearo-top.jpg");
-        position: center center;
-        size: cover;
-    }
-    height: 120vh;
-    width: 100%;
+  background: {
+    image: url("../../img/1.\ hearo-top.jpg");
+    position: center center;
+    size: cover;
+  }
+  height: 120vh;
+  width: 100%;
 
-    .menu-icon {
-        position: fixed;
-        color: $textColor;
-        top: 15px;
-        right: 15px;
-        z-index: 1;
+  .menu-icon {
+    position: fixed;
+    color: $textColor;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
 
-        &:hover {
-            cursor: pointer;
-        }
+    &:hover {
+      cursor: pointer;
     }
+  }
 
-    .logo {
-        position: absolute;
-        height: 95px;
-        transform: translateX(-50%);
-        top: 50%;
-        left: 50%;
-    }
+  .logo {
+    position: absolute;
+    height: 85px;
+    transform: translateX(-50%);
+    top: 52%;
+    left: 50%;
+  }
 
-    .arrow-down {
-        position: absolute;
-        bottom: 0;
-        transform: translateX(-50%);
-        left: 50%;
-    }
+  .arrow-down {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }

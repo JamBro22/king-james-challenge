@@ -6,43 +6,43 @@ $backgroundColor: #201728;
 $textColor: #f8f8ff;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 %boxPadding {
-    padding: 80px;
+  padding: 80px;
 }
 
 p {
-    color: $textColor;
+  color: $textColor;
 }
 
 button {
-    background: transparent;
-    color: $textColor;
-    font: {
-        family: $montserrat;
-        size: 12px;
-    }
-    border: 2px solid $secondaryColor;
-    height: 40px;
-    width: 150px;
-    margin-top: 50px;
+  background: transparent;
+  color: $textColor;
+  font: {
+    family: $montserrat;
+    size: 12px;
+  }
+  border: 2px solid $secondaryColor;
+  height: 40px;
+  width: 150px;
+  margin-top: 50px;
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .arrow-right {
-    position: absolute;
-    transform: translateX(20px);
+  position: absolute;
+  transform: translateX(20px);
 }
 
 @import "hero";

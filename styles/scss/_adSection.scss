@@ -1,40 +1,40 @@
 .ad-section {
+  background-color: $backgroundColor;
+  height: 100vh;
+  @extend %boxPadding;
+
+  &::before {
+    content: "";
+    display: block;
     background-color: $backgroundColor;
-    height: 100vh;
-    @extend %boxPadding;
+    height: 200px;
+    margin: -115px -80px;
+    transform: skewY(3deg) translateY(5px);
+  }
 
-    &::before {
-        content: "";
-        display: block;
-        background-color: $backgroundColor;
-        height: 200px;
-        margin: -115px -80px;
-        transform: skewY(3deg);
+  .purple-box {
+    position: absolute;
+    background-color: $primaryColor;
+    width: 68%;
+    left: 15%;
+    font: {
+      size: 40px;
+      family: $playfair;
     }
+    text-align: center;
+    padding: 55px 60px;
+    transform: translateY(-32%);
 
-    .purple-box {
-        position: absolute;
-        background-color: $primaryColor;
-        width: 70%;
-        left: 15%;
-        font: {
-            size: 45px;
-            family: $playfair
-        }
-        text-align: center;
-        padding: 55px 60px;
-        transform: translateY(-35%);
-
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            height: 100px;
-            width: 100%;
-            background-color: $primaryColor;
-            margin: -60px;
-            transform: skewY(-5deg) translateY(60px);
-            z-index: -1;
-        }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 80px;
+      width: 100%;
+      background-color: $primaryColor;
+      margin: -60px;
+      transform: skewY(-4deg) translateY(65px);
+      z-index: -1;
     }
+  }
 }
