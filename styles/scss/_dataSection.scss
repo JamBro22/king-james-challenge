@@ -1,5 +1,40 @@
 .data-section {
   background-color: $primaryColor;
-  height: 150vh;
+  height: 170vh;
   width: 100%;
+
+  .circle {
+    position: absolute;
+    left: 40%;
+    transform: translateY(220px);
+  }
+
+  .slider-2 {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    left: 10%;
+    transform: translateY(90%);
+  }
+
+  .data-block {
+    @extend %general;
+    width: 30%;
+    left: 55%;
+    transform: translateY(92%);
+  }
+
+  .data-p {
+    margin-left: 20%;
+  }
+
+  button {
+    margin-left: 20%;
+  }
+
+  .arrow-2 {
+    @extend %general;
+    left: 50%;
+    transform: translateY(730px);
+  }
 }
