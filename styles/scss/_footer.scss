@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  background-color: $backgroundColor;
+
+  div {
+    @extend .heading;
+    padding: 50px 70px;
+    position: relative;
+    width: 25%;
+    justify-content: space-around;
+    font: {
+      size: 16px;
+      weight: lighter;
+    }
+    color: $secondaryColor;
+  }
+}
