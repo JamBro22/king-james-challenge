@@ -1,21 +1,20 @@
 @media only screen and (max-width: 600px) {
-    .hero{
-        .logo {
-            height: 80px;
-        }
+  .hero {
+    .logo {
+      height: 80px;
     }
+  }
 
-    .ad-section {
-        .purple-box {
-            padding: 30px 15px;
-            font-size: 24px;
-            line-height: 1.5;
-            transform: translateY(-8rem);
+  .ad-section {
+    .purple-box {
+      padding: 30px 15px;
+      font-size: 24px;
+      line-height: 1.5;
 
-            &::after {
-                margin: -15px;
-                transform: skewY(-5deg) translateY(0);
-            }
-        }
+      &::after {
+        margin: -15px;
+        transform: skewY(-5deg) translateY(0);
+      }
     }
+  }
 }
