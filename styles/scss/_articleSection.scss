@@ -1,6 +1,7 @@
 .article-section {
   @extend %boxPadding;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 80vh;
   width: 100%;
@@ -12,27 +13,55 @@
     height: 100%;
 
     p {
+      font: {
+        family: $montserrat;
+        size: 10px;
+        weight: bold;
+      }
+      letter-spacing: 1px;
       color: $secondaryColor;
+      margin: 40px 20px 20px;
     }
 
     h2 {
+      font: {
+        family: $playfair;
+        weight: lighter;
+        size: 30px;
+      }
       color: $textColor;
+      margin: 0 20px;
+      padding-right: 30px;
+    }
+
+    img {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
   @mixin article($url) {
-    background-image: url($url);
-
-    .article-1 {
-      @include article("../../img/12.\ bg-square-gradient.png");
+    background: {
+      image: url($url);
+      position: center center;
+      size: cover;
     }
+  }
 
-    .article-2 {
-      @include article("../../img/14.\ bg-rectangle-gradient.png");
-    }
+  .article-1 {
+    @include article("../../img/12.\ bg-square-gradient.png");
+  }
 
-    .article-3 {
-      @include article("../../img/13.\ bg-circle-gradient.png");
-    }
+  .article-2 {
+    @include article("../../img/14.\ bg-rectangle-gradient.png");
+  }
+
+  .article-3 {
+    @include article("../../img/13.\ bg-circle-gradient.png");
   }
 }
