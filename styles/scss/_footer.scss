@@ -2,7 +2,7 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 300px;
+  height: 250px;
   background-color: $backgroundColor;
 
   div {
@@ -16,5 +16,14 @@ footer {
       weight: lighter;
     }
     color: $secondaryColor;
+
+    p {
+      margin-top: 20px;
+      font: {
+        family: $montserrat;
+        size: 12px;
+      }
+      line-height: 2;
+    }
   }
 }
