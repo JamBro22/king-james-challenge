@@ -6,15 +6,33 @@
   width: 100%;
   background-color: $textColor;
 
-  //   .article-1 {
-  //     @include article(url("../../img/12.\ bg-square-gradient.png"));
-  //   }
+  div {
+    position: relative;
+    width: 32%;
+    height: 100%;
 
-  //   .article-2 {
-  //     @include article(url("../../img/13.\ bg-square-gradient.png"));
-  //   }
+    p {
+      color: $secondaryColor;
+    }
 
-  //   .article-3 {
-  //     @include article(url("../../img/14.\ bg-rectangle-gradient.png"));
-  //   }
+    h2 {
+      color: $textColor;
+    }
+  }
+
+  @mixin article($url) {
+    background-image: url($url);
+
+    .article-1 {
+      @include article("../../img/12.\ bg-square-gradient.png");
+    }
+
+    .article-2 {
+      @include article("../../img/14.\ bg-rectangle-gradient.png");
+    }
+
+    .article-3 {
+      @include article("../../img/13.\ bg-circle-gradient.png");
+    }
+  }
 }
