@@ -11,6 +11,12 @@
     position: relative;
     width: 32%;
     height: 100%;
+    transition: transform 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-10px);
+    }
 
     p {
       font: {
@@ -39,11 +45,6 @@
       bottom: 30px;
       right: 20px;
       transition: transform 0.5s;
-
-      &:hover {
-        cursor: pointer;
-        transform: translateY(-5px);
-      }
     }
   }
 
