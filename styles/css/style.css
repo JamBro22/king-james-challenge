@@ -30,11 +30,11 @@ button {
   background: transparent;
   color: #f8f8ff;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
   border: 2px solid #db1c5e;
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 130px;
   margin-top: 50px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -46,8 +46,8 @@ button:focus {
 
 button:hover {
   cursor: pointer;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -124,8 +124,8 @@ button:hover {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 }
 
@@ -135,8 +135,8 @@ button:hover {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
   }
 }
 

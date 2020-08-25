@@ -39,12 +39,12 @@ button {
   color: $textColor;
   font: {
     family: $montserrat;
-    size: 12px;
+    size: 10px;
   }
   letter-spacing: 1px;
   border: 2px solid $secondaryColor;
-  height: 40px;
-  width: 150px;
+  height: 35px;
+  width: 130px;
   margin-top: 50px;
   transition: 0.2s;
 
@@ -54,7 +54,7 @@ button {
 
   &:hover {
     cursor: pointer;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     transition: transform 0.2s;
   }
 }
