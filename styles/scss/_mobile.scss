@@ -7,6 +7,19 @@
     .logo {
       height: 80px;
     }
+
+    .menu {
+      ul {
+        top: 15%;
+        font-size: 20px;
+        right: 20px;
+        li {
+          margin: 30px;
+        }
+      }
+      width: 100%;
+      right: -100%;
+    }
   }
 
   .ad-section {
