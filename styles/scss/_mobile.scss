@@ -38,3 +38,22 @@
     }
   }
 }
+
+// larger devices
+@media only screen and (min-width: 1400px) {
+  .ad-section {
+    height: 150vh;
+
+    &::before {
+      transform: skewY(3deg) translateY(-50%);
+    }
+
+    .purple-box {
+      transform: translateY(-750px);
+    }
+  }
+
+  .data-section {
+    height: 120vh;
+  }
+}
