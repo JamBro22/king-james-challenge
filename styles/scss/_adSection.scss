@@ -2,6 +2,7 @@
   background-color: $backgroundColor;
   height: 230vh;
   @extend %boxPadding;
+  display: none;
 
   &::before {
     content: "";

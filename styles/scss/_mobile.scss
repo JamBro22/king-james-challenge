@@ -63,5 +63,14 @@
 
   .data-section {
     height: 120vh;
+
+    .slider-2 {
+      left: 15%;
+    }
+
+    .data-block {
+      left: 54%;
+      transform: translateY(96%);
+    }
   }
 }

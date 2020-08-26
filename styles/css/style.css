@@ -169,6 +169,7 @@ button:hover {
 .ad-section {
   background-color: #201728;
   height: 230vh;
+  display: none;
 }
 
 .ad-section::before {
@@ -264,7 +265,6 @@ button:hover {
   background-color: #70259b;
   height: 170vh;
   width: 100%;
-  display: none;
 }
 
 .data-section .circle {
@@ -463,5 +463,13 @@ footer div p {
   }
   .data-section {
     height: 120vh;
+  }
+  .data-section .slider-2 {
+    left: 15%;
+  }
+  .data-section .data-block {
+    left: 54%;
+    -webkit-transform: translateY(96%);
+            transform: translateY(96%);
   }
 }
