@@ -419,6 +419,14 @@ footer div p {
   .hero .logo {
     height: 80px;
   }
+  .ad-section::before {
+    -webkit-transform: skewY(3deg) translateY(-30%);
+            transform: skewY(3deg) translateY(-30%);
+  }
+  .ad-section::after {
+    -webkit-transform: skewY(-3deg) translateY(130%);
+            transform: skewY(-3deg) translateY(130%);
+  }
   .ad-section .purple-box {
     padding: 30px 15px;
     font-size: 24px;

@@ -10,6 +10,14 @@
   }
 
   .ad-section {
+    &::before {
+      transform: skewY(3deg) translateY(-30%);
+    }
+
+    &::after {
+      transform: skewY(-3deg) translateY(130%);
+    }
+
     .purple-box {
       padding: 30px 15px;
       font-size: 24px;
