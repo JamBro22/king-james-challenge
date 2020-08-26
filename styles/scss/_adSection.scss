@@ -2,7 +2,6 @@
   background-color: $backgroundColor;
   height: 230vh;
   @extend %boxPadding;
-  display: none;
 
   &::before {
     content: "";
@@ -24,7 +23,6 @@
 
   .purple-box {
     position: absolute;
-    display: none;
     background-color: $primaryColor;
     width: 68%;
     left: 16%;

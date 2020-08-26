@@ -1,6 +1,6 @@
 .article-section {
   @extend %boxPadding;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 80vh;
