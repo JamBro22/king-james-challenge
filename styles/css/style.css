@@ -74,6 +74,7 @@ button:hover {
   background-size: cover;
   height: 145vh;
   width: 100%;
+  display: none;
 }
 
 .hero span,
@@ -192,6 +193,7 @@ button:hover {
 
 .ad-section .purple-box {
   position: absolute;
+  display: none;
   background-color: #70259b;
   width: 68%;
   left: 16%;
@@ -262,6 +264,7 @@ button:hover {
   background-color: #70259b;
   height: 170vh;
   width: 100%;
+  display: none;
 }
 
 .data-section .circle {
@@ -302,9 +305,7 @@ button:hover {
 }
 
 .article-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -384,9 +385,7 @@ button:hover {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 250px;
@@ -455,6 +454,12 @@ footer div p {
   .ad-section .purple-box {
     -webkit-transform: translateY(-750px);
             transform: translateY(-750px);
+  }
+  .ad-section .waves {
+    left: 74%;
+  }
+  .ad-section .ad-block {
+    left: 17%;
   }
   .data-section {
     height: 120vh;
